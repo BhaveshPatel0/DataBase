@@ -36,6 +36,8 @@ class FruitsAct : AppCompatActivity() {
         btnDelete = findViewById(R.id.btnDelete)
         rcvFruits = findViewById(R.id.rcvFruits)
 
+
+
         dataBase =
             Room.databaseBuilder(applicationContext, FruitsDataBase::class.java, "FruitsDB")
                 .build()
@@ -47,7 +49,7 @@ class FruitsAct : AppCompatActivity() {
             val name = edtFruitsName.text.toString()
             val detail = edtFruitsDetail.text.toString()
             edtFruitsName.setText("")
-            edtFruitsDetail.setText("")
+             edtFruitsDetail.setText("")
             Thread{
                 dataBase.FruitsDAO().insertFruits(DataFruits(name = name, detail = detail))
                 val allData=dataBase.FruitsDAO().getAllFruits()

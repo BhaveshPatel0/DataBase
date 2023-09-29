@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="@dimen/_5sdp">
+
+        <TextView
+            android:id="@+id/tvVehicleBrandName"
+            style="@style/TitleStyle"
+            android:text="@string/vehicle_detail"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvVehicleName"
+            style="@style/TitleStyle"
+            android:text="@string/vehicle_detail"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivUnFavorite"
+       style="@style/BackButtonStyle"
+        android:src="@drawable/ic_favorite"
+        android:layout_gravity="center"
+        android:padding="@dimen/_5sdp"/>
+
+</LinearLayout>

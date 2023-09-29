@@ -38,6 +38,9 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -70,5 +73,19 @@ dependencies {
 
 // To use Kotlin Symbolic Processing (KSP)
 //    ksp("androidx.room:room-compiler:$room_version")
+
+    implementation("io.github.inflationx:calligraphy3:3.1.1")
+    implementation("io.github.inflationx:viewpump:2.0.3")
+
+
+    //glide Image Loading dependency
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
+    //glide Image Loading dependency
+
+    //Dexter Dependency
+    implementation ("com.karumi:dexter:6.2.3")
+    //Dexter Dependency
 
 }

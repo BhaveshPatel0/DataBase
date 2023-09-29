@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Database</string>
+    <string name="vehicle_detail">Vehicle Detail</string>
+    <string name="mobile_brand_name">Mobile Brand Name</string>
+    <string name="add">add</string>
+    <string name="mobile_name">Mobile Name</string>
 </resources>
