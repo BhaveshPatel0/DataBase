@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FruitsAct"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtFruitsID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:layout_marginHorizontal="@dimen/_10sdp"/>
+    <EditText
+        android:id="@+id/edtFruitsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fruits Name"
+        android:layout_margin="@dimen/_10sdp"/>
+    <EditText
+        android:id="@+id/edtFruitsDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fruits Detail"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_15sdp">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"/>
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"/>
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_5sdp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvFruits"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"/>
+
+</LinearLayout>
