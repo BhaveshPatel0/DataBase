@@ -4,9 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.color.tools.database.databinding.ItemRcvVideoBinding
 
-class AdapterVideo(val reqContext: Context.val listOfVideo:ArrayList<String>) : RecyclerView.Adapter<AdapterVideo.HolderVideo>() {
+class AdapterVideo(val reqContext: Context,val listOfVideo:ArrayList<String>) : RecyclerView.Adapter<AdapterVideo.HolderVideo>() {
 
     class HolderVideo(val binding: ItemRcvVideoBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -23,5 +24,6 @@ class AdapterVideo(val reqContext: Context.val listOfVideo:ArrayList<String>) : 
 
     override fun onBindViewHolder(holder: HolderVideo, position: Int) {
 
+        Glide.with(reqContext).load(listOfVideo[position]).into(holder.binding.ivVideo)
     }
 }
